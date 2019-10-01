@@ -12,7 +12,12 @@ const HeroCard: React.FC<IHeroCard> = props => {
       props.img +
       ')'
   }
-  return <div className="HeroCard" style={divStyle}></div>
+  return (
+    <div
+      className={props.enabled ? 'HeroCard' : 'HeroCard disabled'}
+      style={divStyle}
+    ></div>
+  )
 }
 
 export default HeroCard

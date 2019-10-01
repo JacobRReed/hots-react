@@ -17,3 +17,13 @@
   box-shadow: inset 0 4px 8px 0 rgba(255, 0, 0, 0.2),
     0 6px 20px 0 rgba(255, 0, 0, 0.18);
 }
+
+.HeroCard.disabled {
+  opacity: 0.2;
+  cursor: default;
+}
+
+.HeroCard.disabled:hover {
+  transform: scale(1);
+  box-shadow: none;
+}

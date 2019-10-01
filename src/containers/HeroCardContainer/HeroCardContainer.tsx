@@ -6,7 +6,11 @@ import React from 'react'
 
 const heroCardList = require('../../models/hero-list.json')
 
-const HeroContainer: React.FC = () => {
+interface IHeroCardContainerProps {
+  enabledRoles: string[]
+}
+
+const HeroCardContainer: React.FC<IHeroCardContainerProps> = props => {
   const heroes: IHero[] = heroCardList
   return (
     <div className="HeroCardContainer">
@@ -17,6 +21,7 @@ const HeroContainer: React.FC = () => {
             img={hero.img}
             role={hero.role}
             name={hero.name}
+            enabled={props.enabledRoles.includes(hero.role)}
           />
         )
       })}
@@ -24,4 +29,4 @@ const HeroContainer: React.FC = () => {
   )
 }
 
-export default HeroContainer
+export default HeroCardContainer
