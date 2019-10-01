@@ -16,6 +16,7 @@ const HeroCard: React.FC<IHeroCard> = props => {
     <div
       className={props.enabled ? 'HeroCard' : 'HeroCard disabled'}
       style={divStyle}
+      title={props.name}
     ></div>
   )
 }

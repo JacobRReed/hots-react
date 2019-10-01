@@ -3,3 +3,16 @@
   margin-left: 15%;
   margin-right: 15%;
 }
+
+.App h1 {
+  background-image: url('/assets/images/textbg.gif');
+  background-size: contain;
+  color: transparent;
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  font-size: 6em;
+  line-height: 0.75;
+  margin: 10px 0;
+}
