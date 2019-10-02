@@ -1,18 +1,33 @@
-import './HeroSearchInput.css'
+import './HeroSearchInput.css';
 
-import React from 'react'
-import { TextField } from '@material-ui/core'
+import React, { ChangeEvent } from 'react';
 
-const HeroSearchInput: React.FC = () => {
-  return (
-    <div className="HeroSearchInput">
-      <TextField
-        autoComplete="true"
-        label="Search for a hero"
-        fullWidth={true}
-      />
-    </div>
-  )
+import { TextField } from '@material-ui/core';
+import { connect } from 'react-redux';
+import { setSearchAction } from '../../store/actions';
+
+interface DispatchProps {
+	setSearch: (str: string) => {};
 }
 
-export default HeroSearchInput
+const HeroSearchInput: React.FC<DispatchProps> = props => {
+	const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+		props.setSearch(e.target.value);
+	};
+
+	return (
+		<div className="HeroSearchInput">
+			<TextField
+				autoComplete="true"
+				label="Search for a hero"
+				fullWidth={true}
+				onChange={handleChange}
+			/>
+		</div>
+	);
+};
+
+export default connect(
+	null,
+	{ setSearch: setSearchAction }
+)(HeroSearchInput);

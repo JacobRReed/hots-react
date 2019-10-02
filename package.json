@@ -1,38 +1,48 @@
 {
-  "name": "hots-react",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@material-ui/core": "^4.4.3",
-    "@types/jest": "24.0.18",
-    "@types/node": "12.7.8",
-    "@types/react": "16.9.4",
-    "@types/react-dom": "16.9.1",
-    "lodash": "^4.17.15",
-    "react": "^16.10.1",
-    "react-dom": "^16.10.1",
-    "react-scripts": "3.1.2",
-    "typescript": "3.6.3"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+	"name": "hots-react",
+	"version": "0.1.0",
+	"author": {
+		"name": "Jacob Reed",
+		"email": "jacob.russell.reed@gmail.com",
+		"url": "https://jacobrreed.io"
+	},
+	"private": true,
+	"dependencies": {
+		"@material-ui/core": "^4.4.3",
+		"@types/jest": "24.0.18",
+		"@types/lodash": "^4.14.141",
+		"@types/node": "12.7.8",
+		"@types/react": "16.9.4",
+		"@types/react-dom": "16.9.1",
+		"@types/react-redux": "^7.1.4",
+		"lodash": "^4.17.15",
+		"react": "^16.10.1",
+		"react-dom": "^16.10.1",
+		"react-redux": "^7.1.1",
+		"react-scripts": "3.1.2",
+		"redux": "^4.0.4",
+		"redux-devtools-extension": "^2.13.8",
+		"typescript": "3.6.3"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject"
+	},
+	"eslintConfig": {
+		"extends": "react-app"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	}
 }
