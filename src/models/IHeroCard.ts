@@ -1,4 +1,4 @@
-export interface IHeroCard {
+export interface IHero {
   name: string
   role: string
   img: string
