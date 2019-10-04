@@ -1,0 +1,132 @@
+{
+	"name": "Abathur",
+	"shortname": "abathur", //Name all lowercase, with no punctuations or spaces
+	"release_date": "2014-03-13", //date hero release, leave blank if you don't know
+	"icon": "", // leave alone
+	"image": "", // leave alone
+	"role": "support",
+	"abilities": [
+		{
+			"cooldown": 4, // time in seconds
+			"description": "Spawn and attach a Symbiote to a target ally or Structure. While active, Abathur controls the Symbiote, gaining access to new Abilities. The Symbiote is able to gain XP from nearby enemy deaths.",
+			"hotkey": "Q",
+			"title": "Symbiote",
+			"trait": false, // Is it a trait ability? true or false
+			"ultimate": false // Is it an ultimate ability
+		},
+		{
+			"cooldown": 10,
+			"description": "Spawn a mine that becomes active after a short time. Deals 153 (+4% per level) damage and reveals the enemy for 4 seconds. Lasts 90 seconds.  Stores up to 3 charges.",
+			"hotkey": "W",
+			"title": "Toxic Nest",
+			"trait": false,
+			"ultimate": false
+		},
+		{
+			"cooldown": 90,
+			"description": "Turn an allied Minion or Locust into a Monstrosity. When enemy Minions near the Monstrosity die, it gains 2% Health and 2% Basic Attack damage, stacking up to 40 times.  The Monstrosity can be healed by Carapace and has the ability to Burrow to a visible location every 80 seconds.  Using Symbiote on the Monstrosity allows Abathur to control it, in addition to Symbiote's normal benefits.  This Ability can be reactivated to automatically cast Symbiote on his Monstrosity.",
+			"hotkey": "R",
+			"title": "Evolve Monstrosity",
+			"trait": false,
+			"ultimate": true
+		},
+		{
+			"cooldown": 70,
+			"description": "Clone target allied Hero and control it for 20 seconds. Abathur has perfected the clone, granting it 20% Spell Power, 20% bonus Attack Damage, and 10% bonus Movement Speed. Cannot use their Heroic Ability.",
+			"hotkey": "R",
+			"title": "Ultimate Evolution",
+			"trait": false,
+			"ultimate": true
+		},
+		{
+			"cooldown": 15,
+			"description": "Spawns a Locust to attack down the nearest lane every 15 seconds. Locusts last for 16 seconds, have 316 (+4% per level) health and deal 46 (+4% per level) damage with each Basic Attack.",
+			"hotkey": "D",
+			"title": "Locust Strain",
+			"trait": true,
+			"ultimate": false
+		},
+		{
+			"cooldown": 30,
+			"description": "Quickly tunnel to a visible location",
+			"hotkey": "Z",
+			"title": "Deep Tunnel",
+			"trait": false,
+			"ultimate": false
+		},
+		{
+			"cooldown": 3,
+			"description": "Shoots a spike towards target area that deals 119 (+4% per level) damage to the first enemy it contacts.",
+			"hotkey": "Q",
+			"title": "Stab",
+			"trait": false,
+			"ultimate": false
+		},
+		{
+			"cooldown": 6,
+			"description": "Deals 120 (+4% per level) damage to nearby enemies.",
+			"hotkey": "W",
+			"title": "Spike Burst",
+			"trait": false,
+			"ultimate": false
+		},
+		{
+			"cooldown": 6,
+			"description": "Shields the assisted ally for 150 (+4% per level). Allied Heroes are healed for 22 (+4% per level) Health per second while the Shield is active. Lasts for 6 seconds.",
+			"hotkey": "E",
+			"title": "Carapace",
+			"trait": false,
+			"ultimate": false
+		},
+		{
+			"cooldown": 2,
+			"description": "Cancels the Symbiote ability. Releases your ally and returns to controlling Abathur.",
+			"hotkey": "R",
+			"title": "Cancel Symbiote",
+			"trait": false,
+			"ultimate": false
+		},
+		{
+			"cooldown": 3,
+			"description": "Shoots a spike towards target area that deals 119 (+4% per level) damage to the first enemy it contacts.",
+			"hotkey": "Q",
+			"title": "Stab",
+			"trait": false,
+			"ultimate": false
+		},
+		{
+			"cooldown": 6,
+			"description": "Deals 120 (+4% per level) damage to nearby enemies.",
+			"hotkey": "W",
+			"title": "Spike Burst",
+			"trait": false,
+			"ultimate": false
+		},
+		{
+			"cooldown": 12,
+			"description": "Shields the assisted ally for 157 (+4% per level). Lasts for 8 seconds.",
+			"hotkey": "E",
+			"title": "Carapace",
+			"trait": false,
+			"ultimate": false
+		},
+		{
+			"cooldown": 80,
+			"description": "Order your Evolved Monstrosity to quickly tunnel to a visible location",
+			"hotkey": "Z",
+			"title": "Deep Tunnel",
+			"trait": false,
+			"ultimate": false
+		}
+	],
+	"talents": [
+		{
+			"level": 1, //level tier
+			"sort": 4, // sort (1 being first) as you see it in HOTS
+			"title": "Survival Instincts",
+			"ability": "D", //What button this modifies (if any) QWERD 12345
+			"description": "Increases Locust's Health by 100% and damage by 60%.",
+			"icon": "BLANK" // no touchy
+		}
+	]
+}
