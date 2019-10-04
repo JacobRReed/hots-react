@@ -1,4 +1,5 @@
 import { Hero } from './../models/Hero';
+import { HeroMetaModal } from './../models/HeroMetaModal';
 import { RoleTypes } from '../models/RoleTypes';
 import { createStore } from 'redux';
 import rootReducer from './reducers';
@@ -7,6 +8,7 @@ export interface StoreState {
 	rolesSelected: string[];
 	heroSearchString: string;
 	heroes: Hero[];
+	modal: HeroMetaModal;
 }
 
 export const store = createStore(
