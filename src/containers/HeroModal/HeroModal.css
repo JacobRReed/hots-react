@@ -1,0 +1,14 @@
+.heroName {
+  margin: 0;
+}
+.heroSubtitle {
+  margin: 0;
+}
+.section-title {
+  margin: 0;
+  border-bottom: 1px dashed grey;
+}
+
+.hero-info {
+  font-size: 1em;
+}
